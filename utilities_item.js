@@ -838,6 +838,9 @@ var Utilities_Item = {
 								+ "falling back to author");
 						}
 					}
+
+					if(creator.ISNI) newCreator.ISNI = creator.ISNI;
+
 					if(!newCreator.creatorType) newCreator.creatorType = "author";
 
 					newCreators.push(newCreator);
